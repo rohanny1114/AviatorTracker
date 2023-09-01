@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">aviatorTracker</string>
+
+    <string name="aviatorTitleApp">FLIGHT\nTRACKER</string>
+    <string name="aviatorInstruction">Enter the Airport Code</string>
+    <string name="aviatorBtnSearch">SEARCH AIRPORT</string>
+    <string name="aviatorBtnSave">SAVED FLIGHTS</string>
+    <string name="aviatorAlertSearch"></string>
+    <string name="aviatorTitleSaved">Saved\nFlights</string>
+    <string name="aviatorBtnSaveFrag">SAVE THIS FLIGHT</string>
+    <string name="aviatorBtnDelFrag">DELETE THIS FLIGHT</string>
+
+</resources>

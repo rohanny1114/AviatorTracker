@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="statusBar">#9C27B0</color>
+    <color name="avion_font">#14171A </color>
+    <color name="avion_blue">#36C5F0 </color>
+    <color name="avion_background">#F5F8FA </color>
+    <color name="avion_yello">#ECB22E</color>
+    <color name="avion_red">#E01E5A</color>
+    <color name="avion_green">#2EB67D</color>
+</resources>

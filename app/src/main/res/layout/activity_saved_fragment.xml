@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/detailAirline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_reg"
+        android:text="AIRLINE"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/detailFlight"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <TextView
+        android:id="@+id/detailFlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monoton"
+        android:text="FLIGHT"
+        android:textAlignment="center"
+        android:textColor="@color/avion_yello"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/srcTitle"
+        app:layout_constraintTop_toBottomOf="@+id/detailAirline"
+        tools:layout_editor_absoluteX="24dp" />
+
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/srcTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_reg"
+        android:text="SOURCE"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/srcAirport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailFlight" />
+
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/srcAirport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginStart="32dp"
+        android:text="Source Airport Name"
+        app:layout_constraintBottom_toTopOf="@+id/srcTerminal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srcTitle" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/srcTerminal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginStart="32dp"
+        android:text="Source Terminal Name"
+        app:layout_constraintBottom_toTopOf="@+id/srcGate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srcAirport" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/srcGate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Source Gate Name"
+        app:layout_constraintBottom_toTopOf="@+id/srcSchduled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srcTerminal" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/srcSchduled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="source schdeule"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/srcDelay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srcGate" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/srcDelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Source Delay Name"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srcSchduled" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/avion_green"
+        app:layout_constraintBottom_toTopOf="@+id/dstTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srcDelay" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/dstTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_reg"
+        android:text="DESTINATION"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dstAirport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/dstAirport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginStart="32dp"
+        android:text="Destination Airport Name"
+        app:layout_constraintBottom_toTopOf="@+id/dstTerminal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dstTitle" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/dstTerminal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Terminal Name"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/dstGate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dstAirport" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/dstGate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination Gate Name"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/dstSchduled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dstTerminal" />
+
+    <TextView
+        android:textColor="@color/avion_font"
+        android:id="@+id/dstSchduled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination schdule Name"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteDetailBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dstGate" />
+
+    <Button
+        android:id="@+id/deleteDetailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/avion_blue"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="DELETE THIS FLIGHT"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dstSchduled" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
